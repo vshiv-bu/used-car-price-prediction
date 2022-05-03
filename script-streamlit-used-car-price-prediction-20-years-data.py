@@ -7,24 +7,20 @@
 # Numpy & Pandas
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas_profiling as pp
+
 
 # Models
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor, BaggingRegressor, AdaBoostRegressor, GradientBoostingRegressor
-import xgboost as xgb
-from sklearn import metrics
-import missingno as msno
+# from sklearn.preprocessing import LabelEncoder
+# from sklearn.model_selection import train_test_split, GridSearchCV
+# from sklearn.linear_model import LinearRegression
+# from sklearn.tree import DecisionTreeRegressor
+# from sklearn.ensemble import RandomForestRegressor, BaggingRegressor, AdaBoostRegressor, GradientBoostingRegressor
+# import xgboost as xgb
+# from sklearn import metrics
+# import missingno as msno
 
 # Plotting
-from warnings import simplefilter
 import streamlit as st
-import plotly.figure_factory as ff
 import plotly.express as px
 
 # GCP Auth
@@ -66,7 +62,7 @@ if __name__ == '__main__':
     TABS = '\t' * 8
 
     BUCKET_NAME = "used-car-dataset"
-    FILE_NAME = "vehicles.csv" #"vehicles_reduced.csv"
+    FILE_NAME = "vehicles_reduced.csv" #"vehicles_reduced.csv"
 
     ########### Step 1 - Read Data ############
     st.write(DASHES)
