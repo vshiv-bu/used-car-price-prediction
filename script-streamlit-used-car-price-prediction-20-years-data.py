@@ -62,7 +62,7 @@ if __name__ == '__main__':
     TABS = '\t' * 8
 
     BUCKET_NAME = "used-car-dataset"
-    FILE_NAME = "vehicles.csv" #"vehicles_reduced.csv"
+    FILE_NAME = "vehicles_reduced.csv" #"vehicles_reduced.csv"
 
     ########### Step 1 - Read Data ############
     st.write(DASHES)
