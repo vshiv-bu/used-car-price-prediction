@@ -21,16 +21,12 @@ import numpy as np
 
 # Streamlit
 import streamlit as st
-from streamlit_pandas_profiling import st_profile_report
 import plotly.express as px
 from annotated_text import annotated_text, annotation
 
 # GCP Auth
 from google.oauth2 import service_account
 from google.cloud import storage
-
-# Others
-import io
 
 # %% [markdown]
 st.title("Used Car Price Prediction - 20 Years Data")
