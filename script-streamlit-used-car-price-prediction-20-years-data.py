@@ -62,7 +62,7 @@ if __name__ == '__main__':
     TABS = '\t' * 8
 
     BUCKET_NAME = "used-car-dataset"
-    FILE_NAME = "vehicles_reduced.csv" #"vehicles_reduced.csv"
+    FILE_NAME = "vehicles_reduced_use.csv" #"vehicles_reduced.csv"
 
     ########### Step 1 - Read Data ############
     st.write(DASHES)
@@ -109,7 +109,7 @@ if __name__ == '__main__':
 
     # Initial cleaning up
     # Drop NaNs and duplicates
-    vehicles_df.dropna(inplace=True)
+    #vehicles_df.dropna(inplace=True)
     vehicles_df.drop_duplicates(inplace=True)
 
     # Update index and change data type of year to string
