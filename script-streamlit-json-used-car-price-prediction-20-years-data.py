@@ -80,8 +80,8 @@ if __name__ == '__main__':
     # Read data from the file into a dataframe and display the top 10 records
 
     with st.spinner(f'Reading input file {FILE_NAME}...'):
-        #vehicles_df_full = read_data_from_gcp(bucket, FILE_NAME)
-        vehicles_df_full = pd.read_json(FILE_NAME)  # testing line
+        vehicles_df_full = read_data_from_gcp(bucket, FILE_NAME)
+        #vehicles_df_full = pd.read_json(FILE_NAME)  # testing line
         vehicle_count = len(vehicles_df_full)
         if vehicle_count > 0:
             st.success(
