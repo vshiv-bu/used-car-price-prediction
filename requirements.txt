@@ -1,3 +1,4 @@
 sklearn
 plotly
 google-cloud-storage
+annotated_text
