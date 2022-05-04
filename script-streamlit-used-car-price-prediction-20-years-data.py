@@ -62,7 +62,7 @@ if __name__ == '__main__':
     TABS = '\t' * 8
 
     BUCKET_NAME = "used-car-dataset"
-    FILE_NAME = "vehicles.csv" #"vehicles_reduced.csv"
+    FILE_NAME = "vehicles_reduced_use.csv" #"vehicles_reduced.csv"
 
     ########### Step 1 - Read Data ############
     st.write(DASHES)
@@ -101,8 +101,7 @@ if __name__ == '__main__':
     st.write("Some fields don't add value to this exercise as well. Removing them, the resultant dataframe is as below:")
 
     # Determine and remove the columns to drop based on the above graph
-    cols_to_drop = ['id', 'url', 'region', 'region_url', 'VIN', 'image_url', 'description',
-                    'county', 'size', 'paint_color', 'drive', 'cylinders', 'state', 'lat', 'long']
+    cols_to_drop = ['id', 'url', 'region', 'description', 'lat', 'long']
     vehicles_df = vehicles_df_full.drop(columns=cols_to_drop)
 
     # Remove the larger data frame from memory
