@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     # Determine and remove the columns to drop based on the above graph
     cols_to_drop = ['id', 'description', 'lat', 'long']
-    vehicles_df = vehicles_df_full.drop(columns=cols_to_drop)
+    vehicles_df = vehicles_df_full.drop(columns=cols_to_drop, axis=1)
 
     # Remove the larger data frame from memory
     del vehicles_df_full
